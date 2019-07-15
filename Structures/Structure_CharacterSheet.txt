@@ -1,0 +1,23 @@
+Char={Type="PC",						//|PC/NPCA/NPCP		PC/NPC Active/Passive			A/P: attacks on sight / reacts to aggression
+	Name="Max Mustermann",
+	Job="Mage",
+	Race="Dwarf",
+	HP= [100, 80],						//[max, now]
+	Space= [40, 35],					//Items in Backpack take up Space
+	Equipment={
+		Active={						
+			Items.Wapon.Wand[2],
+			Items.Amor.small[4],
+			Items.Food[0],
+			Items.Food[0],
+			Items.Food[0],
+			Items.Food[2]
+		},
+		Backpack={
+			Items.Food[2],
+			Items.Potion[3],
+			Items.Potion[3],
+			Items.Potion[1],
+		}
+	}
+}
