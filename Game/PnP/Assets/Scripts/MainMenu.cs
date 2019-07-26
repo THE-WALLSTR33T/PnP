@@ -5,26 +5,35 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEditor;
 using System.IO;
-//using System.Linq;
 public class MainMenu : MonoBehaviour {
-
+	public static string path;
 	public void PlayGame(){
+		if(path == null){
+			Debug.Log("no path found");
+		}
+		else{
 		SceneManager.LoadScene("Play");
+		}
 	}
 	public void WriteGame(){
-		SceneManager.LoadScene("Write");
+		if(path == null){
+			Debug.Log("no path found");
+		}
+		else{
+			SceneManager.LoadScene("Write");
+		}
 	}
 	public void QuitGame(){
 		Debug.Log("QUIT");
 		Application.Quit();
 	}
 	public void PlayLoad(){
-		string path = EditorUtility.OpenFilePanel("Choose main.txt","","txt");
+		Debug.Log(path);
+		path = EditorUtility.OpenFilePanel("Choose main.txt","","txt");
 		Debug.Log(path);
 		Debug.Log(System.IO.File.ReadAllLines(path)[0]);
-		//Debug.Log(Resources.Load(path));
 	}
 	public void WriteLoad(){
-		Debug.Log(EditorUtility.OpenFilePanel("Choose main.txt","","txt"));
+		path = EditorUtility.OpenFilePanel("Choose main.txt","","txt");
 	}
 }
