@@ -1,4 +1,4 @@
-[1, 7, 13]
+[1, 8, 15]
 Flint and Steel
 /Tools_0.png
 Space 1
@@ -10,12 +10,12 @@ Bowl
 /Tools_1.png
 Space 1
 UsableBy All
-NotBy Race=Giant
+NotBy None
 Durabilety Inf
 
 Magic chalk
 /Tools_2.png
 Space 2
-NotBy All
 UsableBy Job=Mage
+NotBy Race=Giant
 Durabilety 100

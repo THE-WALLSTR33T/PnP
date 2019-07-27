@@ -8,7 +8,7 @@ Char={Type="PC",
 	Space= [40, 35],					
 	Equipment={
 		Active={						
-			Items.Wapon.Wand[2],
+			Items.Weapon.Wand[2],
 			Items.Amor.Small[4],
 			Items.Food.Food[0],
 			Items.Food.Food[0],

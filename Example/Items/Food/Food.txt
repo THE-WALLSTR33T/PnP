@@ -1,0 +1,21 @@
+[1, 8, 15]
+Soup
+/Food_0
+Space 1
+Hunger -20
+Thirst -10
+Returns Items.Suport.Tools[1] 
+
+Steak
+/Food_1
+Space 1
+Hunger -30
+Thirst 0
+Returns None
+
+Water
+/Food_2
+Space 1
+Hunger 0
+Thirst -20
+Returns Items.Suport.Tools[1] 
