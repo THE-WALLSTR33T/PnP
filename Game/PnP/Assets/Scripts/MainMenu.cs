@@ -7,6 +7,7 @@ using UnityEditor;
 using System.IO;
 public class MainMenu : MonoBehaviour {
 	public static string path;
+	public static string pathToMain;
 	public void PlayGame(){
 		if(path == null || path == ""){
 			Debug.Log("no path found");
@@ -28,13 +29,16 @@ public class MainMenu : MonoBehaviour {
 		Application.Quit();
 	}
 	public void PlayLoad(){
-		Debug.Log(path);
-		path = EditorUtility.OpenFilePanel("Choose main.txt","","txt");
-		Debug.Log(path);
-		Debug.Log(System.IO.File.ReadAllLines(path)[0]);
-		ChangeTextPlayMenu.SetText(System.IO.File.ReadAllLines(path)[0]);
+		Debug.Log("path: " + path);
+		path = EditorUtility.OpenFolderPanel("Choose main folder","","");
+		pathToMain = path + "/main.txt";
+		Debug.Log("path: " + path);
+		Debug.Log("mainpath: " + pathToMain);
+		Debug.Log("name: " + System.IO.File.ReadAllLines(pathToMain)[0]);
+		ChangeTextPlayMenu.SetText(System.IO.File.ReadAllLines(pathToMain)[0]);
+		ChangeBGPlayMenu.SetBackground(path, System.IO.File.ReadAllLines(pathToMain)[1]);
 	}
 	public void WriteLoad(){
-		path = EditorUtility.OpenFilePanel("Choose main.txt","","txt");
+		path = EditorUtility.OpenFolderPanel("Choose main folder","","");
 	}
 }

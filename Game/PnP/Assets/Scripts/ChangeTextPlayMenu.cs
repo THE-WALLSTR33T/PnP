@@ -4,7 +4,9 @@ using UnityEngine;
 using TMPro;
 public class ChangeTextPlayMenu : MonoBehaviour {
 	public static TextMeshProUGUI textMeshPro;
+	
 	// Use this for initialization
+
 	void Start () {
 		
 	}
@@ -15,9 +17,10 @@ public class ChangeTextPlayMenu : MonoBehaviour {
 	}
 	void Awake() {
 		textMeshPro = GetComponent<TextMeshProUGUI>();
-		textMeshPro.text = "Load a file to play!";
+		textMeshPro.text = "Load a folder to play!";
 	}
 	public static void SetText(string value){
 		textMeshPro.text = value;
 	}
+
 }
