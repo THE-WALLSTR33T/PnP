@@ -1,0 +1,20 @@
+[1, 6, 11, 16]
+Healing
+/Potion_0
+Space 3
+HP +30, 0
+
+Regeneration
+/Potion_1
+Space 3
+HP +5, 8
+
+Poison
+/Potion_2
+Space 3
+HP -10, 5
+
+Death
+/Potion_3
+Space 3
+HP -Inf, 0

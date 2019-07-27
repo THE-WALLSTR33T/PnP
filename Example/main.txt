@@ -3,3 +3,4 @@ BG = /textures/background.png
 MAP = /map/mainMap.txt
 PC = /PC/mainPC.txt
 NPC = /NPC/mainNPC.txt
+ITMES = /Items
