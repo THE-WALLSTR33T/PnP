@@ -5,7 +5,7 @@ Char={Type="PC",						//|PC/NPCA/NPCP		PC/NPC Active/Passive			A/P: attacks on s
 	HP= [100, 80],						//[max, now]
 	Space= [40, 35],					//Items in Backpack take up Space
 	Equipment={
-		Active={						
+		Active={						//Items can be used without taking off Backpack
 			Items.Wapon.Wand[2],
 			Items.Amor.small[4],
 			Items.Food[0],
