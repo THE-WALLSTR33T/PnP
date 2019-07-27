@@ -8,7 +8,7 @@ using System.IO;
 public class MainMenu : MonoBehaviour {
 	public static string path;
 	public void PlayGame(){
-		if(path == null){
+		if(path == null || path == ""){
 			Debug.Log("no path found");
 		}
 		else{
@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour {
 		}
 	}
 	public void WriteGame(){
-		if(path == null){
+		if(path == null || path == ""){
 			Debug.Log("no path found");
 		}
 		else{
