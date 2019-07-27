@@ -32,6 +32,7 @@ public class MainMenu : MonoBehaviour {
 		path = EditorUtility.OpenFilePanel("Choose main.txt","","txt");
 		Debug.Log(path);
 		Debug.Log(System.IO.File.ReadAllLines(path)[0]);
+		ChangeTextPlayMenu.SetText(System.IO.File.ReadAllLines(path)[0]);
 	}
 	public void WriteLoad(){
 		path = EditorUtility.OpenFilePanel("Choose main.txt","","txt");
