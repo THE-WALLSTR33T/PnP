@@ -1,26 +1,22 @@
-Char={Type="PC",						//|PC/NPCA/NPCP		PC/NPC Active/Passive			A/P: attacks on sight / reacts to aggression
-	Name="Max Mustermann",
-	Job="Mage",
-	Race="Dwarf",
-	LVL=4,
-	XP=[75, 100],						//[now, next LVL]
-	HP= [100, 80],						//[max, now]
-	Space= [40, 35],					//Items in Backpack take up Space
-	Equipment={
-		Active={						//Items can be used without taking off Backpack
-			Items.Weapon.Wand[2],
-			Items.Amor.small[4],
-			Items.Food.Food[0],
-			Items.Food.Food[0],
-			Items.Food.Food[0],
-			Items.Food.Food[2],
-			Items.Suport.Tools[0],
-		},
-		Backpack={
-			Items.Food.Food[2],
-			Items.Suport.Potion[3],
-			Items.Suport.Potion[3],
-			Items.Suport.Potion[1],
-		}
-	}
+Name = Max Mustermann                  	//|PC/NPCA/NPCP		PC/NPC Active/Passive			A/P: attacks on sight / reacts to aggression
+Job = Mage
+Race = Dwarf
+LVL = 4
+XP = [75, 100]							//[now, next LVL]
+HP = [100, 80]							//[max, now]
+Space = [40, 35]						//Items in Backpack take up Space
+Active={								//Items can be used without taking off Backpack
+	Items.Weapon.Wand[2]
+	Items.Amor.small[4]
+	Items.Food.Food[0]
+	Items.Food.Food[0]
+	Items.Food.Food[0]
+	Items.Food.Food[2]
+	Items.Suport.Tools[0]
+}
+Backpack={
+	Items.Food.Food[2]
+	Items.Suport.Potion[3]
+	Items.Suport.Potion[3]
+	Items.Suport.Potion[1]
 }

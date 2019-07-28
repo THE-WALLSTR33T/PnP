@@ -34,9 +34,9 @@ public class MainMenu : MonoBehaviour {
 		pathToMain = path + "/main.txt";
 		Debug.Log("path: " + path);
 		Debug.Log("mainpath: " + pathToMain);
-		Debug.Log("name: " + System.IO.File.ReadAllLines(pathToMain)[0]);
-		ChangeTextPlayMenu.SetText(System.IO.File.ReadAllLines(pathToMain)[0]);
-		ChangeBGPlayMenu.SetBackground(path, System.IO.File.ReadAllLines(pathToMain)[1]);
+		Debug.Log("name: " + Utilitys.GetInformationTXT(pathToMain)[0]);
+		ChangeTextPlayMenu.SetText(Utilitys.GetInformationTXT(pathToMain)[0]);
+		ChangeBGPlayMenu.SetBackground(path, Utilitys.GetInformationTXT(pathToMain)[1]);
 	}
 	public void WriteLoad(){
 		path = EditorUtility.OpenFolderPanel("Choose main folder","","");

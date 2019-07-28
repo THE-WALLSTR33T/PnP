@@ -1,26 +1,24 @@
-Char={Type="PC",						
-	Name="Max Mustermann",
-	Job="Mage",
-	Race="Dwarf",
-	LVL=4,
-	XP=[75, 100],
-	HP= [100, 80],						
-	Space= [40, 35],					
-	Equipment={
-		Active={						
-			Items.Weapon.Wand[2],
-			Items.Amor.Small[4],
-			Items.Food.Food[0],
-			Items.Food.Food[0],
-			Items.Food.Food[0],
-			Items.Food.Food[2],
-			Items.Suport.Tools[0],
-		},
-		Backpack={
-			Items.Food.Food[2],
-			Items.Suport.Potion[3],
-			Items.Suport.Potion[3],
-			Items.Suport.Potion[1],
-		}
-	}
+Name = Max Mustermann
+Job = Mage
+Race = Dwarf
+LVL = 4
+XP = [75, 100]
+HP =  [100, 80]					
+Space = [40, 35]					
+Active = {						
+	Items.Weapon.Wand[2],
+	Items.Amor.Small[4],
+	Items.Food.Food[0],
+	Items.Food.Food[0],
+	Items.Food.Food[0],
+	Items.Food.Food[2],
+	Items.Suport.Tools[0],
 }
+Backpack = {
+	Items.Food.Food[2],
+	Items.Suport.Potion[3],
+	Items.Suport.Potion[3],
+	Items.Suport.Potion[1],
+}
+
+
